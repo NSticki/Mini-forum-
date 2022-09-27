@@ -1,0 +1,13 @@
+{% extends "layout/base.html" %}
+{% block title %}Регистрация{% endblock %}
+{% block content %}
+    <div class="lastFourApli">Регистрация</div>
+    <p class="lastFourApli2">Заполните форму регистрации </p>
+    <form class='createAppli' action="." method="post">
+        <div class='forFormAppli'>
+            {{ user_form.as_p }}
+            {% csrf_token %}
+        <p><input class='deleteButton' type="submit" value="Создать аккаунт"></p>
+        </div>
+    </form>
+{% endblock %}

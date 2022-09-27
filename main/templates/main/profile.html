@@ -1,0 +1,30 @@
+{% extends "layout/base.html" %}
+{% block title %} Профиль  {% endblock %}
+
+{% block content %}
+<div class="profile">
+   <h2>Пользоваетель: {{ user.username }}</h2>
+   {% if user.fio %}
+       <div>Приветствуем, {{ user.fio }}
+   {% endif %}
+    <div class="lastFourApli">Все ваши объявления</div>
+    {% for post in bbs %}
+    <div class="forAllAppliInmain">
+   <div class="forApplicationsAll">
+   <div class="forApplicationsAllETitle">{{post.title}}</div>
+   <div class="forApplicationsAllETitle1">Статус вашей заявки: {{post.status}}</div>
+   <div class="forApplicationsAllETitle1">Описание: {{post.description}}</div>
+   <div class="forApplicationsAllETitle1">Категория: {{post.category}}</div>
+   <div class="forApplicationsAllETitle1">Изображение: </div>
+
+   <div class="forApplicationsAllETitle1"><img class="forAllImg" src="{{MEDIA_URL}}{{ post.image.url }}" alt="Изображение"></div>
+
+
+   {% if post.status == 'Новая' %}  <div class="forApplicationsAllETitle"><a onclick="return confirm('Вы уверены что хотите удалить запись?')" href="{% url 'main:profile_bb_delete' post.id %}">Удалить</a></div>  {% endif %}
+
+
+
+   </div>
+   {% endfor %}
+   </div>
+{% endblock %}

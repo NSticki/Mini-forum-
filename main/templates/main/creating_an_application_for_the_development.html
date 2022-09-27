@@ -1,0 +1,14 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Создание заявки{% endblock %}
+
+{% block content %}
+    <div class="lastFourApli">Создание заявки</div>
+    <form class='createAppli' action="." method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="lastFourApli2">Заполните форму</div>
+     <div class='forFormAppli'>{{ application_form.as_p }}
+        <p><input class='deleteButton' type="submit" value="Отправить заявку"></p>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,20 @@
+
+{% extends "layout/base.html" %}
+
+{% block content %}
+   <div class="lastFourApli">Последние выполненные заявки</div>
+   {% for post in bb %}
+   <div class="forAllAppliInmain">
+   <div class="forApplicationsAll">
+   <div class="forApplicationsAllETitle">{{post.title}}</div>
+   <div div class="forApplicationsAllETitle1">Создано: {{post.created}}</div>
+   <div div class="forApplicationsAllETitle1">Автор поста: {{post.author}}</div>
+   <div div class="forApplicationsAllETitle1">Описание: {{post.description}}</div>
+   <div div class="forApplicationsAllETitle1">Категория: {{post.category}}</div>
+   <div div class="forApplicationsAllETitle1">Изображение:</div>
+   <div div class="forApplicationsAllETitle1">Статус: {{post.status}}</div>
+
+   <div class="forApplicationsAllETitle1"><img class="forAllImg" src="{{MEDIA_URL}}{{ post.image.url }}" alt="Изображение"></div>
+   </div>
+   {% endfor %}
+{% endblock %}

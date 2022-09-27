@@ -1,0 +1,13 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Создание заявки{% endblock %}
+
+{% block content %}
+    <h1>Создание заявки</h1>
+    <p>Заполните данную форму</p>
+    <form action="." method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+     {{ application_form.as_p }}
+        <p><input type="submit" value="Изменить"></p>
+    </form>
+{% endblock %}

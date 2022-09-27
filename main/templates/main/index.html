@@ -1,0 +1,46 @@
+
+{% extends "layout/base.html" %}
+
+{% block content %}
+
+<div class='forMainPicture'>
+    <img class='forMainPicture' src='media/цу.jpg'>
+</div>
+
+<div class='forTextInPicture'>
+    <div class='textPicture'></div>
+</div>
+
+<div class='textPictureeee'>Стань одним из нас
+</div>
+
+<div class="checkDown">
+    <div class="countCheck">
+        <div class="countCheckEL">
+            Количество заявок
+        </div>
+    </div>
+    <div class="countCheckNumb">
+        <div class="countCheckELTwo">
+            {{ count }}
+        </div>
+        <div class="lastFourApli">Последние  заявки</div>
+        {% for post in bb %}
+        <div class="forAllAppliInmain">
+            <div class="forApplicationsAll">
+                <div class="forApplicationsAllETitle">{{post.title}}</div>
+                <div class="forApplicationsAllETitle1">Статус заявки: {{post.status}}</div>
+                <div class="forApplicationsAllETitle1">Создано: {{post.created}}</div>
+                <div  class="forApplicationsAllETitle1">Автор поста: {{post.author}}</div>
+                <div  class="forApplicationsAllETitle1">Описание: {{post.description}}</div>
+                <div  class="forApplicationsAllETitle1">Категория: {{post.category}}</div>
+                <div  class="forApplicationsAllETitle1">Изображение:</div>
+                <div class="forApplicationsAllETitle1"><img class="forAllImg" src="{{MEDIA_URL}}{{ post.image.url }}" alt="Изображение"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+            {% endfor %}
+            {% endblock %}

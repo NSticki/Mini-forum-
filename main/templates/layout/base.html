@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+   <title>{% block title %} Главная {% endblock %} </title>
+</head>
+<body>
+   {% if user.is_authenticated %}
+<div class="mainHeaderForAuth">
+<div class="mainHeaderForAuthEl1"><a href="{% url 'main:index' %}">Mysite</a></div>
+<div class="mainHeaderForAuthEl2"><a href="{% url 'main:profile' %}">Профиль</a></div>
+<div class="mainHeaderForAuthEl4"><a href="{% url 'main:application' %}">Создание заявки</a></div>
+<div class="mainHeaderForAuthEl3"><a href="{% url 'main:logout' %}">Выход</a></div>
+</div>
+
+   {% else %}
+
+ <div class="headEr">
+    <div class="headErEl"><a href="{% url 'main:index' %}">Mysite</a></div>
+    <div class="forHeadErEl">
+    <div class="headErEl1"><a href="{% url 'main:login' %}">Авторизация</a></div>
+    <div class="headErEl2"><a href="{% url 'main:register' %}">Регистарция</a></div>
+    </div>
+    </div>
+       {% endif %}
+     <div>
+</div>
+
+       {% block content %}
+       {% endblock %}
+       </div>
+</body>
+</html>
+

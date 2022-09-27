@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Helvetica;
+    overflow-x:hidden;
+}
+
+.menu{
+display: flex;
+background-color: #504e4e;
+height: 100px;
+align-items: center;
+}
+
+.menuel{
+flex-grow: 1;
+padding: 10px 10px 10px 10px;
+}
+
+
+.profile{
+padding: 10px 10px 10px 10px;
+}
+
+.applications{
+border-style: solid;
+border-radius: 1em;
+margin:5px 5px 5px 5px;
+padding:5px 5px 5px 5px;
+}
+
+.applications_items{
+font-size: 25px;
+margin-left: auto;
+margin-right: auto;
+width: 6em
+}
+
+.imageForApplication{
+width: 200px;
+height: 150px;
+}
+
+/* auth */
+
+.headEr{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(158, 42, 42, 0);
+    height: 100px;
+    padding: 10px 10px 10px 10px ;
+    align-items: center;
+}
+
+.headErEl{
+    flex-grow: 2.5;
+    padding-left: 10px;
+    font-size: 40px;
+}
+
+.forHeadErEl{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.headErEl1{
+    flex-grow: 1;
+}
+
+.headErEl2{
+    display: flex;
+    flex-grow: 0.3;
+    padding-right: 10px;
+    justify-content: end;
+}
+
+a{
+    text-decoration: none;
+    color: #0c0606;
+}
+a:hover{
+
+  background:white;
+  color:#40aed7;
+}
+.mainI{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBlock{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfbfb;
+    display: flex;
+    width: 700px;
+    height: 500px;
+    padding: 10px 10px 10px 10px;
+    margin: 25px 10px 10px 10px;
+    border-radius: 2em;
+}
+
+.elMainBlock{
+    padding-top: 5px;
+    font-size: 35px;
+}
+
+.elMainBlock2{
+    padding-bottom: 20px;
+}
+
+.elMainBlock{
+    flex-grow: 1;
+}
+
+.elsMainBlocks{
+    flex-grow: 1;
+}
+
+.forsB{
+    flex-grow: 0.3;
+}
+
+#sB{
+    border-radius: 1em;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 10px;
+       background-color: #ffffff;
+}
+
+.iP{
+    border-radius: 1em;
+    width: 600px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* registration */
+
+.mainBlockReg{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+     background-color: #ffffff;
+    display: flex;
+    width: 700px;
+    height: 800px;
+    padding: 10px 10px 10px 10px;
+    margin: 25px 10px 10px 10px;
+    border-radius: 2em;
+}
+
+.elMainBlockSogls{
+    display: flex;
+}
+
+.elMainBlockSogl2{
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+.elMainBlockSogl1{
+    flex-grow: 1;
+}
+
+/* mainheader */
+
+.mainHeaderForAuth{
+    display: flex;
+   background-color: rgba(255, 255, 255, 0.63);
+    height: 100px;
+    padding: 10px 10px 10px 10px ;
+    align-items: center;
+}
+
+.mainHeaderForAuthEl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainHeaderForAuthEl1{
+    flex-grow: 1;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+.mainHeaderForAuthEl2{
+    flex-grow: 10;
+}
+
+.mainHeaderForAuthEl3{
+    padding-right: 20px;
+}
+
+.mainHeaderForAuthEl4{
+    flex-grow: 1;
+}
+
+/* createdApplications */
+
+.forApplimain{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(40, 55, 246, 0.63);
+    width: 700px;
+    height: 500px;
+    padding: 10px 10px 10px 10px;
+    margin: 25px 10px 10px 10px;
+    border-radius: 1em;
+    align-items: center;
+}
+
+.forAppli{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.forAppliHead{
+    align-self: center;
+    flex-grow: 1;
+}
+
+.forAppliHeadqwer{
+    flex-grow: 1;
+}
+
+
+/* main */
+
+.lastFourApli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.forAllAppliInmain{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap-reverse;
+}
+
+.forAllImg{
+    width: 400px;
+    height: 300px;
+    border-radius:1em;
+}
+
+.forApplicationsAll{
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    flex-direction: column;
+     background-color: #fcfbfb;
+    margin: 10px 10px 10px 10px;
+    border-radius: 1em;
+    width: 400px;
+    border-style: solid;
+}
+
+.forApplicationsAllETitle{
+    align-self: center;
+}
+
+.forApplicationsAllETitle1{
+    padding-top: 10px;
+}
+/* profile */
+
+.forProfile{
+    display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.forAppliUser{
+    padding-left: 15px;
+}
+
+/* count */
+
+.countCheck{
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.countCheckEL{
+    background-color: #a1bdef;
+    width: 250px;
+    text-align: center;
+    border-radius: 1em;
+    padding: 5px 5px 5px 5px;
+}
+
+.countCheckNumb{
+
+    display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.countCheckELTwo{
+
+    background-color: #a1bdef;
+    width: 50px;
+    text-align: center;
+    border-radius: 1em;
+    padding: 5px 5px 5px 5px;
+}
+
+.deleteAppli{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.deleteButton{
+    border-radius: 1em;
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    background:white;
+    }
+.deleteButton:hover{
+
+  background:white;
+  color:#40aed7;
+}
+
+
+.createAppli{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.forFormAppli{
+    background-color: #ffffff;
+    display: flex;
+    border-style: solid;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    margin: 25px 10px 10px 10px;
+    align-items: center;
+    border-radius: 1em;
+}
+
+#id_title{
+margin-top: 10px;
+margin-bottom: 10px;
+width: 312px;
+}
+
+#id_description{
+margin-bottom: 10px;
+}
+
+#id_image{
+margin-bottom: 10px;
+}
+
+.lastFourApli2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+#id_username{
+width: 312px;
+margin-bottom: 10px;
+}
+
+#id_email{
+width: 312px;
+margin-bottom: 10px;
+}
+
+#id_email{
+width: 312px;
+margin-bottom: 10px;
+}
+
+#id_fio{
+width: 312px;
+margin-bottom: 10px;
+}
+
+#id_password{
+width: 312px;
+margin-bottom: 10px;
+}
+
+#id_password2{
+width: 312px;
+margin-bottom: 10px;
+}
+
+#id_send_messages{
+margin-bottom: 10px;
+}
+
+.forMainPicture {
+	width: 100%;
+	height: 1000px;
+	position: absolute;
+}
+
+.forTextInPicture {
+position: relative;
+top: 100px;
+left: 100px;
+width:500px;
+height: 200px;
+opacity: 0.7;
+}
+
+.textPictureeee {
+opacity: 1;
+top: 230px;
+font-size: 36px;
+left: 120px;
+position: absolute;
+}
+
+.textPictureeee > p {
+margin-top: 20px;
+font-size: 20px;
+}
+
+.checkDown {
+margin-top: 800px;
+}

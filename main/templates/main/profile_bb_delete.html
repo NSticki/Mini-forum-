@@ -1,0 +1,11 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Создание заявки{% endblock %}
+
+{% block content %}
+    <div class="lastFourApli">Удаление заявки</div>
+    <form class='deleteAppli' method="post">
+          {% csrf_token %}
+        <p><input class='deleteButton' type="submit" value="Удалить"></p>
+    </form>
+{% endblock %}
